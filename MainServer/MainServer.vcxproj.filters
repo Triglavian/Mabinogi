@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Interface">
+      <UniqueIdentifier>{87cf0d6c-cd3f-4844-bbec-f9633b4a1541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Packet">
+      <UniqueIdentifier>{e069e4c0-7846-428a-9566-a10a778a9e8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\MiddlewareList">
+      <UniqueIdentifier>{3e96165b-36b0-4bb3-a767-b7da90847853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\MiddlewareList\Networking">
+      <UniqueIdentifier>{39765026-c5e6-49d5-9bf2-95819a8429e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\MiddlewareList\GameLogic">
+      <UniqueIdentifier>{9a82e8ce-33ca-4ae4-809c-87510ae8084c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Listener.cpp">
+      <Filter>소스 파일\MiddlewareList\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic.cpp">
+      <Filter>소스 파일\MiddlewareList\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="IMiddleware.cpp">
+      <Filter>소스 파일\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="MiddlewareList.cpp">
+      <Filter>소스 파일\MiddlewareList</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Listener.h">
+      <Filter>소스 파일\MiddlewareList\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonHeader.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerBase.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic.h">
+      <Filter>소스 파일\MiddlewareList\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="IMiddleware.h">
+      <Filter>소스 파일\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddlewareList.h">
+      <Filter>소스 파일\MiddlewareList</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
