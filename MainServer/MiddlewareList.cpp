@@ -1,8 +1,9 @@
 #include "MiddlewareList.h"
 #include "IMiddleware.h"
 
-bool MiddlewareList::AddMiddleWare(std::shared_ptr<IMiddleware> mw)
+void MiddlewareList::AddMiddleWare(std::shared_ptr<IMiddleware> mw)
 {
-	mwList.get()->back().get()->SetNextSeq(std::bind(&IMiddleware::Sequence, mw.get(), std::placeholders::_1));
-	return true;
+	mwPipeline.get()->push_back(mw);
+	mwPipeline.get()->back().get()->SetNextSeq(std::bind(&IMiddleware::Sequence, mw.get(), std::placeholders::_1));
+	return;
 }

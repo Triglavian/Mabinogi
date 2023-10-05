@@ -4,8 +4,8 @@
 class MiddlewareList
 {
 public:
-	bool AddMiddleWare(std::shared_ptr<class IMiddleware>);
+	void AddMiddleWare(std::shared_ptr<class IMiddleware>);
 private:
-	std::unique_ptr<std::list<std::shared_ptr<class IMiddleware>>> mwList;
+	std::unique_ptr<std::list<std::shared_ptr<class IMiddleware>>> mwPipeline;
 };
 
